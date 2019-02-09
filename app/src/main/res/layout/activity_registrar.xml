@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Registrar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="628dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="REGISTRARSE"
+                android:textAlignment="center"
+                android:textColor="#7a4e40"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imageVisew2"-->
+            <!--android:layout_width="61dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginTop="-55dp"-->
+            <!--android:onClick="Regresar"-->
+            <!--app:srcCompat="@drawable/ic_arrow_back_black_24dp" />-->
+            <EditText
+                android:id="@+id/txtnombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="Nombres"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtcorreo6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtpassword5"
+                android:accessibilityTraversalAfter="@+id/txtcorreo2"
+                android:ems="10"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:maxLength="50" />
+
+            <EditText
+                android:id="@+id/txtpassword6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:accessibilityLiveRegion="@android:integer/status_bar_notification_info_maxnum"
+                android:duplicateParentState="true"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="numberPassword"
+                android:maxLength="4" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnRegistrar3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="27dp"
+                android:text="Acepto los términos y condiciones" />
+
+            <Button
+                android:id="@+id/btnRegistrar3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/checkBox"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/checkBox"
+                android:layout_marginBottom="17dp"
+
+                android:text="REGISTRAR" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
